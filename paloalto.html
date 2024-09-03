@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>eTech Rentals</title>
+    <style>
+      .montserrat {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+      .noto-sans {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        border: 1.5px solid black;
+        border-radius: 2px;
+        position: relative;
+        cursor: pointer;
+        background-color: white;
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: black;
+        border-color: black;
+      }
+
+      input[type="checkbox"]:checked::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 11px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        top: 1px;
+        left: 5px;
+        transform: rotate(45deg);
+      }
+      details summary img {
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+      }
+      details[open] summary img {
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+      }
+
+      summary img {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="bg-[#FFFFFFE5] z-50 fixed w-full max-[1536px]:justify-between max-md:px-[40px] max-sm:px-[20px] px-[80px] py-[26px] flex justify-center max-[1536px]:gap-0 gap-[582px] items-center"
+    >
+      <img
+        src="https://s3-alpha-sig.figma.com/img/6369/ee0c/1f80653f4186ebd5cfeb6a007e978d0a?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l8Gcb7jKBxQgD1cRcKvnTPU8TE2yOMAQMcT8LQa8YQjsfqPMl3qyOF86gdBp-Osv467kideAtFUHmqvg0AJ9lvHwF7VfXHywqSXbxXRxLRV3k3clsrsRYzPloGFQDXzA1WREO7n6CkQuYQTL8H5Ui7X36wh6nfj5uDsdJk02Ce0q8i4DgEVELwrWn9lFTOHv-5syCqxNbQlY7wuKDAGfkWloTzYj0tmEfTFy7DSW0YGF7a~yzzPh~vKFd2o9C8HtDBg6sYqITbMGcKneLEed6rfh7emoLSwwYMSnXjPV0AFYtW0VnqwOCU2azNCnthF06f476DjqbWRVam9u-XzGMQ__"
+        alt=""
+        class="w-[188.63px] h-[56.37px] max-sm:w-[120px] max-sm:h-auto"
+      />
+      <nav>
+        <ul
+          class="flex items-center gap-[20px] max-[1100px]:gap-[12px] max-lg:gap-[20px]"
+        >
+          <li>
+            <a
+              href="#"
+              class="font-semibold noto-sans text-[14px] leading-[19.07px] max-[900px]:hidden opacity-70"
+              >Technology Rentals</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-semibold noto-sans text-[14px] leading-[19.07px] max-[900px]:hidden opacity-70"
+              >Industry Solutions</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-semibold noto-sans text-[14px] leading-[19.07px] max-[900px]:hidden opacity-70"
+              >Recent Events</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#0CA0AD] max-lg:hidden noto-sans font-semibold text-[14px] leading-[19.07px]"
+              >(877) 738-3246
+            </a>
+          </li>
+
+          <li class="flex gap-[12px] items-center">
+            <a
+              href="#"
+              class="bg-[#0CA0AD] p-[10px] max-lg:hidden mont-serrat text-white text-[14px] leading-[17.07px] font-medium"
+              >Get a Quote</a
+            >
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/0865707178e9359c2e862587f526bc76ce074131/ci_hamburger-md.svg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <main
+      class="pl-[80px] max-xl:pb-[250.21px] max-lg:px-0 flex justify-between max-w-[1600px] m-auto max-lg:flex-col max-lg:px-0 max-lg:pb-[68px]"
+    >
+      <div
+        class="w-[501px] max-[1100px]:w-[440px] pt-[223px] max-lg:px-[80px] max-md:px-[40px] max-sm:px-[20px] max-lg:w-full"
+      >
+        <p class="font-semibold noto-sans text-[14px] leading-[150%]">
+          Trusted by 200+ retailers
+        </p>
+        <div
+          class="flex gap-[8px] items-center mt-[12px] h-[22.79px] mb-[32px]"
+        >
+          <img
+            src="https://raw.githubusercontent.com/ak513499786/images/30fa9f57488f847be93c5bc1541b6fcf108e84b8/devicon_google.svg"
+            width="20px"
+            height="20px"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/ak513499786/images/30fa9f57488f847be93c5bc1541b6fcf108e84b8/Frame%207.svg"
+            class="w-[125.97px]"
+            alt=""
+          />
+          <p class="sans-noto text-[12px] leading-[18px] opacity-80">
+            240 reviews
+          </p>
+        </div>
+        <h1
+          class="inter font-bold text-[48px] max-sm:text-[36px] max-sm:leading-[120%] leading-[52.8px] tracking-[-3%] mb-[23px]"
+        >
+          Palo Alto Point of Sale Rental Systems
+        </h1>
+        <p
+          class="noto-sans text-[20px] max-sm:text-base leading-[150%] opacity-80 mb-[32px]"
+        >
+          Rent Square POS equipment for your event in Palo Alto, California. We
+          offer everything needed to simplify payment processing, including POS
+          rental systems and accessories.
+        </p>
+        <div class="flex items-center gap-[4px] mb-[16px]">
+          <div
+            class="w-[11.31px] h-[11.31px] rounded-[2.66px] rotate-45 bg-[#EC0037]"
+          ></div>
+          <p class="text-[17px] leading-[25.5px] noto-sans">
+            Lowest price since a week!
+          </p>
+        </div>
+        <div
+          class="flex max-sm:flex-col max-sm:items-start gap-[16px] items-center"
+        >
+          <a
+            href="#"
+            class="border-[#0CA0AD] border-[1px] text-[#0CA0AD] py-[10px] px-[20px] mont-serrat text-[16px] leading-[19.5px] font-medium"
+            >Get a Quote</a
+          >
+          <span
+            class="w-[1px] h-[37px] border-[1px] border-[#00000033] max-sm:hidden"
+          ></span>
+          <div class="flex gap-[8px]">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/09a4dce0cc302313610739b4c81a82d4768407c2/material-symbols_call.svg"
+              alt=""
+            />
+            <p
+              class="text-[24px] max-sm:text-[20px] max-sm:leading-[30px] leading-[32.69px] noto-sans font-medium"
+            >
+              (877) 738-3246
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#F6F6F6] max-lg:mt-[82px] max-lg:h-auto max-xl:px-[80px] max-lg:w-full max-lg:p-[80px] max-sm:p-[20px] max-md:p-[40px] max-[1150px]:pl-[40px] max-xl:h-[900px] h-[820px] pt-[151.5px] pr-[94px] pl-[95px]"
+      >
+        <div
+          class="px-[36px] max-sm:px-[18px] max-sm:py-[25px] py-[48px] bg-white"
+        >
+          <p
+            class="noto-sans font-semibold text-[20px] max-sm:text-base leading-[22px] tracking-[-1%] mb-[24px]"
+          >
+            Fill out the form to get a quote.
+          </p>
+          <div class="flex max-xl:flex-col gap-[16px]">
+            <label
+              for=""
+              class="border-[1px] max-xl:w-full text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px] w-[216.5px]"
+            >
+              Enter your name
+              <input
+                type="text"
+                name=""
+                class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+                placeholder="Joe Keery"
+                id=""
+              />
+            </label>
+            <label
+              for=""
+              class="border-[1px] max-xl:w-full text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px] w-[216.5px]"
+            >
+              Enter your business name
+              <input
+                type="text"
+                name=""
+                placeholder="JK Computers"
+                class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+                id=""
+              />
+            </label>
+          </div>
+          <label
+            for=""
+            class="border-[1px] mt-[16px] text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px]"
+          >
+            Enter your email
+            <input
+              type="text"
+              name=""
+              class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+              placeholder="joekeery@gmail.com"
+              id=""
+            />
+          </label>
+          <label
+            for=""
+            class="border-[1px] mt-[16px] text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px]"
+          >
+            Enter your phone number
+            <div class="flex items-center gap-[13px]">
+              <p
+                class="border-r-[1px] border-black w-[33px] text-base noto-sans"
+              >
+                +1
+              </p>
+              <input
+                type="text"
+                name=""
+                class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+                placeholder="768 3246"
+                id=""
+              />
+            </div>
+          </label>
+          <label
+            for=""
+            class="pt-[16px] flex text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium"
+          >
+            Select your business type
+          </label>
+          <div
+            class="flex bg-[#F2F2F2] border-[1px] border-[#00000033] rounded-[8px] w-[226px] h-[44px] mt-[8px]"
+          >
+            <p
+              id="business"
+              class="w-[113px] h-[42px] cursor-pointer rounded-[8px] bg-[white] flex items-center justify-center noto-sans text-[14px] leading-[21px] text-[#000000cc]"
+            >
+              Business
+            </p>
+            <p
+              id="personal"
+              class="w-[113px] h-[42px] cursor-pointer rounded-[8px] flex items-center justify-center noto-sans text-[14px] leading-[21px] text-[#000000cc]"
+            >
+              Personal
+            </p>
+          </div>
+          <label
+            for="contact"
+            class="flex items-center cursor-pointer text-[14px] max-sm:text-[12px] mt-[27px] leading-[21px] noto-sans text-[#000000cc]"
+            ><input
+              type="checkbox"
+              name="contact"
+              class="mr-[4px] w-[18px] h-[18px]"
+              id="contact"
+            />I need to be contacted immediately</label
+          >
+          <button
+            class="bg-[#0CA0AD] px-[24px] py-[12px] mt-[13.5px] flex w-[143px] mont-serrat text-white text-[16px] leading-[19.5px] font-medium"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Power and Simplicity -->
+    <section
+      class="px-[80px] max-w-[1600px] m-auto max-md:px-[40px] max-sm:px-[20px] pb-[67.5px]"
+    >
+      <div class="flex max-lg:flex-col justify-between">
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/6fb8/0ef4/3cc9aa5fb5b2120691984105fad75417?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V8jGQ-wHjdTnZ9LAtZF~aYgcLpjAf12NrdU5HaZND0aOg~e0Ey5SrYejN7V8sib2bRfxJcAEP8meWdbzm7iGGXNNlRVFEUQ4lfNQ-t6pmKyWCixjzlsbenc8sZa9DTHvxM1Uy0pq-d5J5FKPJOd98aGeFoNSdXFXRos5qkE1UbpoNTSBeISszY9VvxFbSlfRFg7QDZ9K7Gj47d1mCeCn1bezH8gSjZrNW465Qx2QNvVmxW7NTALkWdkA94Ro1IyerSRVSImvceGdSbOF9qJ4Uuf4EAs7RyrEF1vo7ED5LcmC8oV6YcY~e6SX6qzrd3KcR8edw2p9n2XB~C7H0H~Hbw__"
+            alt=""
+            width="676px"
+            height="auto"
+            class="w-[676px] h-[534px] max-md:w-full max-md:h-auto object-cover"
+          />
+          <div class="mt-[27px] flex gap-[16px]">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/7331/a761/151d6afec9a21221975f32f1996bcae5?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=piFJ-~XVJRGwuunkiLd2EP7dpj44UY63zBFNiEKXS8nfjarv8j9v0Ebu861-IepJYbTVaDoOYNqGUALKPkH3dPKo7m7EFIuEvA1IUgMf4ZuoSFgYwFHKrGmvtT5nNQmsK9KQrbk882pAPogo3wcgcNgrPK2SYntrS2EiY-gGJM1jJWSZoGozhhDZxYhThV~6jnE-fSle-J5CsC7PJ6vM-4D073uX0lIS0bGa4iA9JbELS9iTGdjWS2QPXWVuVYu1j8N9ak2le1LaElRo1Xrhfqyyx7Y4TbgOmfW-EOnnmKwfodU6hi-ocWNQdBE~~qxNFUl5tnBYjZ7YvA6-09TLeQ__"
+              alt=""
+              class="w-[112px] max-sm:w-[80px] max-sm:h-[80px] h-[112px] border-[1px] border-[#0000001A] rounded-[8px]"
+            />
+            <img
+              src="https://s3-alpha-sig.figma.com/img/87b3/8a38/46b8812e2683118e63bc66fd9f66b22e?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UGaoADvw4yLrF~mXaTnsGavXs6cIN0gxZ5Zu~4hRm5wS8cpxkXga0QPgndvGMwjOexTGj8Xal74yw631093E7lqhNpg4bAiohZo16TpumWLl4Ui2Ihg8TscneWQSCpDaIVwk02OtLBGZ6cPyGoedHt63E9a2mJQPxhKZLxIo4QfuH8boVaFEwvWW2oeD~cr9PhL32ds5dkLwIkT7NcY0s59tYupcOgQFoPHq06qoxFFj-6NXn-USxoj0lg-B8U7mFUQsyrJDcv4~ncBAOBhJqwwLsrKlgQ1bPDI27FFjTGZCXgARSuKg9NnPr34ut0rB55jOq8U1eKvAYDkaRnY85A__"
+              alt=""
+              class="w-[112px] max-sm:w-[80px] max-sm:h-[80px] h-[112px] object-cover border-[1px] border-[#0000001A] rounded-[8px]"
+            />
+            <img
+              src="https://s3-alpha-sig.figma.com/img/a3ad/f264/ea84c32b5871d2a2aa45640bf2567405?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WReW8CcM1OhtJUBZfxSgpzATPL9qr-Xenk~BJVg9Nqv~hDjIaMlZtb9FhxQnaNUHrKGIlwUOFsZPTNr~doZUcie0jOPYLoGiPPDdNikeinELNx5~eA6DlBRFsBzlzk8PlDqPbTaaymUjs6A~uBLG7pf-unYhOmPBEnBHllJu1LolUeyAdN5owdHQBoKcwOXUfKG9TLANkQn1L50eLJIBgsxdlSBjQKQgQyKKkZoHcUwRHE4Sybw5z~uMf~UAxI-oU~NAbtbFMUaATSUqbESIZO62bbb5M~1jeuvh0neqgwxM42~P-aFJArYobghFEh-1r3ba7eTj0QjLll7VSsUClQ__"
+              alt=""
+              class="w-[112px] max-sm:w-[80px] max-sm:h-[80px] h-[112px] object-cover border-[1px] border-[#0000001A] rounded-[8px]"
+            />
+          </div>
+        </div>
+        <div class="mt-[67.5px] max-lg:w-full w-[522px]">
+          <h1
+            class="text-[32px] max-sm:text-[24px] max-sm:leading-[140%] mb-[24px] leading-[38.4px] font-medium tracking-[-1%] noto-sans"
+          >
+            Square Stand 2nd Gen POS Rental in Palo Alto
+          </h1>
+          <p
+            class="noto-sans text-[20px] max-sm:text-base leading-[150%] mb-[24px]"
+          >
+            Looking for a POS rental near you to service hundreds of card
+            transactions — or even thousands? With a Square Stand 2nd Gen credit
+            card machine rental in Palo Alto, you can process payments for
+            pop-up booths, concerts, festivals, and more, generate receipts, and
+            offer a frictionless payment experience.
+          </p>
+          <p
+            class="noto-sans text-[20px] max-sm:text-base font-semibold leading-[150%] mb-[12px]"
+          >
+            Features
+          </p>
+          <div class="flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-[20px] max-sm:text-base leading-[150%]">
+              iPad POS system with easy set-up
+            </p>
+          </div>
+          <div class="flex gap-[4px] mb-[8px] items-center">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-[20px] max-sm:text-base leading-[150%]">
+              User-friendly checkout for a better customer experience
+            </p>
+          </div>
+          <div class="flex gap-[4px] mb-[24px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-[20px] max-sm:text-base leading-[150%]">
+              Compatibility with Apple Pay, Google Pay, and all major credit
+              cards
+            </p>
+          </div>
+          <div class="flex items-center gap-[8px] mb-[12px]">
+            <div
+              class="w-[11.31px] h-[11.31px] rounded-[2.66px] rotate-45 bg-[#EC0037]"
+            ></div>
+            <p
+              class="text-[20px] max-sm:text-base leading-[30px] font-semibold noto-sans"
+            >
+              Lowest price since a week!
+            </p>
+          </div>
+          <button
+            class="bg-[#0CA0AD] px-[20px] py-[10px] mt-[12px] flex w-[207px] mont-serrat text-white text-[28px] leading-[34px] font-medium"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Seamless Transactions -->
+    <section
+      class="px-[80px] max-w-[1600px] m-auto max-md:px-[40px] max-sm:px-[20px] pb-[86.5px]"
+    >
+      <div class="flex max-lg:flex-col justify-between">
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/efc1/07c4/d310c2ef57a90261fb95077e26d7b3d2?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZoiXcPtcxIjexdXLfVkBFjfZzuzoK7BWW6tZVgJ6H9JH6BAdjtBO3XIs~xd5506lI9Wc6uavaGIGoYi8S2WyiF8xSkGuaunPGooPML5U~7M6vPH9k6OOWDKrpFMb0WKGuRbg-2lCPhVd-bncGHP9DFPMeXtvbZxvrjw2wHjNjubn4yUYTe-u0kMw-ZdexBHlq-c1rdbDKdO5~OrXSd6STQ58DSPUOTcmQdNRdu6KXtbTf2AubdX-77JSUep8GmqevJ6ULi8VLb-mmq~Xze0Q4p~LdkSznrnzTiRKQtc0LdMcmzzqwXaspx86PB63P9sdcfB3T4KP6LGfm9t2GCzw8g__"
+            alt=""
+            width="630px"
+            height="500px"
+            class="w-[630px] max-md:w-full max-md:h-auto h-[500px] object-cover"
+          />
+          <div class="mt-[44px] flex gap-[16px]">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/0a3f/ad86/168825c923017cfd9c891247c23bbbee?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KXjB4oQzNWaM1fX7SjhElI7vppPzdn0YBVsfFIH8LQTmTC3sKXg~RvRmDfGIIdIcavhJhsYuunCj~uZFwQ20qvoyKiiai9Ot4DKafntHWO5-BqhiJ1w-cUxQoPfAMxfID3TO5XtLHv8e7ckj9Uvc5Qdg2ZpS7AJ889qvoKICDZ6SZ-bxw~SCyLZO0Jpg5KOnR~xrM6TGjI0m9wbDzWAqx2GazR5Yv63ny9H7ACSJYJRAB0e~04-i42AiJYH4he67OCe1lGDvp1gQbWy-aU-hl3bnYrCd-sikEKA7p4KYD~F1C9aZwavhZGe4b69Qk6dtY~UGJoLQWnGV2sYtjhrZMA__"
+              alt=""
+              class="w-[112px] h-[112px] max-sm:w-[80px] max-sm:h-[80px] object-cover border-[1px] border-[#0000001A] rounded-[8px]"
+            />
+            <img
+              src="https://s3-alpha-sig.figma.com/img/1c1a/7204/883b380170c3e2f44b1ccea30494d781?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PjnMQ4FJ2yC2LE3qvkLqUaBK3HkV0gwSq6cQm3PNrZsvUokJemD~rcQaD8FNNWg2M8o2BNQs1MM72Bz8E-Caxlg1OiM0TFYtRDpeOWHg0e8d-q3LXggj6tBnMyi2qikRg1M8YpFooDoOFt6yfreM7IxQMoN4AlYmvojJOfNBBo1iP0Jt3m6fq5x2wq29hiFL8oDjTpVbdkOYdglxThyzGBcQiJ96g1YOnp7DhsNpvfJBmO4M4cuOIcmBc3jOGTY6XaJ9cWquHtJF83n7fsaXgYVpf1Gszz6alo1t7aQo5B-bMSRuSjbYvoU~giwCAHxLcOiAwBdWwPNS5bwOQBwp4A__"
+              alt=""
+              class="w-[112px] h-[112px] max-sm:w-[80px] max-sm:h-[80px] object-cover border-[1px] border-[#0000001A] rounded-[8px]"
+            />
+          </div>
+        </div>
+        <div class="mt-[86.5px] max-lg:w-full w-[522px]">
+          <h1
+            class="text-[32px] max-sm:text-[24px] max-sm:leading-[140%] mb-[24px] leading-[38.4px] font-medium tracking-[-1%] noto-sans"
+          >
+            Mobile Square POS Hardware Rental in Palo Alto
+          </h1>
+          <p
+            class="noto-sans text-[20px] max-sm:text-base leading-[150%] mb-[24px]"
+          >
+            Rent a mobile event POS system for your next event in Palo Alto. The
+            Square Terminal offers the flexibility you need for multi-location
+            events and swift, secure payment processing. You can set up in
+            minutes with a Square account and internet connection.
+          </p>
+          <p
+            class="noto-sans text-[20px] max-sm:text-base font-semibold leading-[150%] mb-[12px]"
+          >
+            Features
+          </p>
+          <div class="flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-[20px] max-sm:text-base leading-[150%]">
+              Integrated payments and receipt printing
+            </p>
+          </div>
+          <div class="flex gap-[4px] mb-[8px] items-center">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-[20px] max-sm:text-base leading-[150%]">
+              Accepts credit and debit cards and contactless payments
+            </p>
+          </div>
+          <div class="flex gap-[4px] mb-[24px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-[20px] max-sm:text-base leading-[150%]">
+              Powerful battery for all-day usage
+            </p>
+          </div>
+          <div class="flex items-center gap-[8px] mb-[12px]">
+            <div
+              class="w-[11.31px] h-[11.31px] rounded-[2.66px] rotate-45 bg-[#EC0037]"
+            ></div>
+            <p
+              class="text-[20px] max-sm:text-base leading-[30px] font-semibold noto-sans"
+            >
+              Lowest price since a week!
+            </p>
+          </div>
+          <button
+            class="bg-[#0CA0AD] px-[20px] py-[10px] mt-[12px] flex w-[207px] mont-serrat text-white text-[28px] leading-[34px] font-medium"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Get POS Rental Pricing in Minutes -->
+    <section
+      class="h-[402px] flex flex-col max-lg:px-[80px] max-sm:px-[20px] max-md:px-[40px] items-center bg-[#0CA0AD] justify-center gap-[57px]"
+    >
+      <h1
+        class="text-[48px] max-sm:text-[32px] max-sm:leading-[120%] text-center leading-[58.51px] font-medium mont-serrat text-white"
+      >
+        Get POS Rental Pricing in Minutes!
+      </h1>
+      <p
+        class="mont-serrat font-extrabold text-white bg-[#EC0037] shadow-[5px_5px_0px_white] cursor-pointer text-[28px] max-sm:text-[22px] max-sm:leading-[120%] leading-[34px] px-[20px] py-[10px]"
+      >
+        Get Your FREE Quote
+      </p>
+    </section>
+    <!-- Point of Sale Rental Syst -->
+    <section
+      class="px-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[66px] pb-[84px] bg-[#343333]"
+    >
+      <div
+        class="flex max-xl:gap-[20px] max-w-[1600px] m-auto max-lg:flex-col justify-between"
+      >
+        <h1
+          class="font-medium text-[32px] max-sm:text-[24px] max-sm:leading-[140%] max-xl:w-full noto-sans leading-[38.4px] tracking-[-1%] text-white w-[522px]"
+        >
+          Make Payment Processing a Breeze with Fast, Efficient POS Rentals for
+          Events in Palo Alto
+        </h1>
+        <p
+          class="w-[504.09px] opacity-80 noto-sans max-xl:w-full max-lg:gap-[52px] text-white text-[20px] max-sm:text-base leading-[30px] max-xl:mr-0 mr-[18px]"
+        >
+          You don’t have to invest in expensive point-of-sale hardware and
+          accessories to run a successful event in Palo Alto. With eTech
+          Rentals, you get everything required to ensure a seamless payment
+          experience for customers and your employees, from all-in-one POS
+          rental systems and iPads to accessories. We also help you get set up
+          quickly, so you can focus on making sure your event is a hit.
+        </p>
+      </div>
+      <div
+        class="max-lg:mt-[83px] max-w-[1600px] m-auto max-xl:gap-[20px] max-lg:flex-col max-lg:gap-[52px] flex justify-between"
+      >
+        <div
+          class="w-[563.31px] max-md:w-full mt-[-37px] h-[397.41px] bg-bottom bg-cover bg-[url('https://s3-alpha-sig.figma.com/img/85ca/5fa7/cd528d07337aff8a014f96120a465fc2?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qPMidM0jg3uLqdJAxjHStkbG50JNM9m0s3iKFj7j2xUTdJyUuouPdL6MdKbiCvSWNfc6ghC2qcir1xroT79JEpTpQNbbmxEBcaLZGYAjrJ554x4PmHJoXOLxmG1f61zVjBe6wz-baUjjrX-NDhcpdqtOhIPJE18FQLqdr8Ucj6iAv9vjdj10CFbYxAu23a0B3OB9zTMsAMhgJIV8CYYZUHVLdr1x3r9tk14ndK0cdDHepIikJOsLlH2gcU-TNhO0eaKBsdIHJRdbuaKFCCJQSoMWycefK27eH4Nz6y2SySiPszJdeY6Z59hmPOevnsVyXKBiBxodbYfgDW5XFU17Ig__')]"
+        ></div>
+        <div class="w-[522px] mt-[51px] max-lg:w-full">
+          <div class="flex gap-[4px] mb-[8px] items-start opacity-80">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+              class="invert"
+            />
+            <p
+              class="noto-sans text-[20px] max-sm:text-base text-white leading-[150%]"
+            >
+              Daily, weekly, and monthly contracts available
+            </p>
+          </div>
+          <div class="flex gap-[4px] mb-[8px] items-start opacity-80">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+              class="invert"
+            />
+            <p
+              class="noto-sans text-[20px] max-sm:text-base text-white leading-[150%]"
+            >
+              Fast, secure payment transactions
+            </p>
+          </div>
+          <div class="flex gap-[4px] mb-[8px] items-start opacity-80">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+              class="invert"
+            />
+            <p
+              class="noto-sans text-[20px] max-sm:text-base text-white leading-[150%]"
+            >
+              Accurate record-keeping to help track event payments
+            </p>
+          </div>
+          <div class="flex gap-[4px] mb-[8px] items-start opacity-80">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+              class="invert"
+            />
+            <p
+              class="noto-sans text-[20px] max-sm:text-base text-white leading-[150%]"
+            >
+              No employee training required — simply set up and go
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- map -->
+    <section
+      class="px-[80px] max-w-[1600px] m-auto max-md:px-[40px] max-xl:gap-[20px] max-lg:flex-col max-sm:px-[20px] pt-[80px] pb-[92px] flex justify-between"
+    >
+      <div class="w-[542px] max-lg:w-full">
+        <h1
+          class="font-medium text-[32px] max-sm:text-[24px] max-sm:leading-[140%] noto-sans leading-[38.4px] max-lg:w-full mb-[27px] tracking-[-1%] w-[522px]"
+        >
+          Expedited Shipping for POS Rentals in Palo Alto
+        </h1>
+        <p class="inter text-[20px] max-sm:text-base leading-[30px] opacity-80">
+          If you need a POS rental near you for an upcoming event, we’ve got
+          your back. The day you order your point-of-sale rental equipment is
+          the day we ship it out. Get a quote response in minutes, approve your
+          order, and we’ll send out your POS rental and accessories to Palo Alto
+          right away.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.147236091782!2d-122.1554973!3d37.4443294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa4f18b93beed%3A0x8a6fae9a5508eaaa!2sPalo%20Alto%2C%20CA!5e0!3m2!1sen!2sus!4v1693687562052!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          class="max-lg:block hidden max-md:w-full mt-[36px]"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <h1
+          class="mt-[64px] max-lg:mt-[30px] text-[20px] max-sm:text-base leading-[30px] font-semibold noto-sans mb-[12px]"
+        >
+          Cities we ship to
+        </h1>
+        <div class="w-[540px] max-md:w-full flex flex-wrap">
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Atherton</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Belmont</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Burlingame</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Half Moon Bay</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">La Honda</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Loma Mar</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Los Altos</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Menlo Park</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Moss Beach</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Mountain View</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Palo Alto</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Pescadero</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Redwood City</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">San Carlos</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">San Gregorio</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">San Mateo</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Stanford</p>
+          </div>
+          <div class="w-[180px] flex gap-[4px] mb-[8px] items-start">
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/ae70f32b3eaddeac3dff2127b4aeee3a0bb832d2/material-symbols_check.svg"
+              alt=""
+            />
+            <p class="noto-sans text-base">Sunnyvale</p>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.147236091782!2d-122.1554973!3d37.4443294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa4f18b93beed%3A0x8a6fae9a5508eaaa!2sPalo%20Alto%2C%20CA!5e0!3m2!1sen!2sus!4v1693687562052!5m2!1sen!2sus"
+        width="600"
+        class="max-lg:hidden"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <!-- Read how -->
+    <section
+      class="pt-[52px] pb-[68px] px-[60px] max-md:px-[40px] max-sm:px-[20px] flex flex-col items-center gap-[52px]"
+    >
+      <h1
+        class="text-[32px] max-sm:text-[24px] max-sm:leading-[140%] max-sm:w-full leading-[38.4px] text-center tracking-[-0.32px] font-medium noto-sans w-[522px]"
+      >
+        Read how POS improved the experience of businesses
+      </h1>
+      <div class="flex max-[900px]:flex-col gap-[20px]">
+        <div
+          class="w-[650px] max-[1400px]:w-[50%] max-[900px]:w-full max-md:flex-col max-[1400px]:flex-col max-[900px]:flex-row flex gap-[39px] border-[1px] border-[#00000033] rounded-[11px] px-[20px] py-[22px]"
+        >
+          <img
+            src="https://s3-alpha-sig.figma.com/img/666d/4ced/d04751aeebc8d86910b30e46210c5c1c?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nGo4jdtuBPFJwW5T-9waKjGgcR4nEOv1~Ege~Vao9lGXcByMkD4QLQ7FBZ4LmP4hAXWsZ31-yq-2AfwmGTFysDvd6DDySqW4j92nZfB0EDVG2XUu~6HJco5Nh3x3j6vRwieEg4DqyS0fMNQ0e-37ttGvB3ouJCz2Tb454pbormt1CPeJsZE08a-KCBm2YNabrsdM8iZ01a-YSLCuRY8Bm-maah15qs~hBylzJzi6t6Aa0peE-hNPV8ETSo-1zz6QsFErcNWWvnJlGocrkl5zhccaFfw27b5Jcdf-xymaIau6HilUvH5yOsLFCB0sjm1G8uJwFHUFhdN-KRSEdzaDKw__"
+            alt=""
+            width="266px"
+            height="auto"
+            class="w-[266px] h-[204px] max-[1400px]:w-[100%] max-md:h-auto max-[900px]:w-1/2 max-md:w-full rounded-[10px] object-cover"
+          />
+          <div class="w-[305px] max-[1400px]:w-[95%]">
+            <h1
+              class="text-[24px] leading-[28.8px] font-medium tracking-[-0.24px] mb-[12px]"
+            >
+              Pizza Fest
+            </h1>
+            <p
+              class="w-[279px] max-[1400px]:w-[90%] text-base noto-sans opacity-80 mb-[63px]"
+            >
+              Pizza Fest, the pizza event of the year at LA Live was an
+              unforgettable experience for pizza lovers. From the moment
+              attendees stepped into the event, the aroma of freshly…
+            </p>
+            <p
+              class="text-[#0CA0AD] flex items-center text-[20px] max-sm:text-base leading-[30px] Noto-sans"
+            >
+              Read more
+              <img
+                src="https://raw.githubusercontent.com/ak513499786/images/7ff53f4e5c094ac59700fad8794a2cb118f8d743/weui_arrow-filled.svg"
+                alt=""
+                class="ml-[4px]"
+              />
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[650px] max-[1400px]:flex-col max-md:flex-col max-[900px]:w-full max-[900px]:flex-row max-[1400px]:w-[50%] flex gap-[39px] border-[1px] border-[#00000033] rounded-[11px] px-[20px] py-[22px]"
+        >
+          <img
+            src="https://s3-alpha-sig.figma.com/img/3c66/8944/20281848b30b418e6315816b1cafaff2?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Bo8or3zwL52cRqS0QGhjILBP2JzQlRqyXDjuW7nfJpoLOqbgZQ92kzidRVmNM8GAs17l193G8CZiNPmlZHccX1YlEl7hSVQYR61LN273iXTvVCvjLjUokNaPjUph8a9ijFG0nny6svXuqGqIW0IXEHZYscY5vMLINnDQUtxeDBknFbhPkXq2qw~RUl9js9MpEWR6DLtd0GDPP81YfBfD7b-XxhqAKNLE8wRY0pauvab5bh-h9CdsisZKYg-3dC5MH8r7rMajA~akTet2Rl1xJMV5zTAU9nDx7xO-xcT7ivVkQNgA7LEZDQ0ILBVgh56vY14mnwtb5Najz0eHnZBA0g__"
+            alt=""
+            width="266px"
+            height="auto"
+            class="w-[266px] max-[1400px]:w-[100%] max-md:w-full max-md:h-auto max-[900px]:w-1/2 h-[204px] rounded-[10px] object-cover"
+          />
+          <div class="w-[305px] max-[1400px]:w-[95%]">
+            <h1
+              class="text-[24px] leading-[28.8px] font-medium tracking-[-0.24px] mb-[12px]"
+            >
+              Successful Pop-Up Shop Using Square POS and Verizon MiFi
+            </h1>
+            <p
+              class="w-[279px] max-[1400px]:w-[90%] text-base noto-sans opacity-80 mb-[29px]"
+            >
+              In the rapidly evolving landscape of retail, experiential
+              marketing strategies have become essential for brands to..
+            </p>
+            <p
+              class="text-[#0CA0AD] flex items-center text-[20px] max-sm:text-base leading-[30px] Noto-sans"
+            >
+              Read more
+              <img
+                src="https://raw.githubusercontent.com/ak513499786/images/7ff53f4e5c094ac59700fad8794a2cb118f8d743/weui_arrow-filled.svg"
+                alt=""
+                class="ml-[4px]"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="bg-[#0CA0AD] h-[54px] flex items-center justify-center flex w-[131px] mont-serrat text-white text-[28px] leading-[34px] font-medium"
+      >
+        See all
+      </button>
+    </section>
+    <!-- Two Convenient, Secure Choices -->
+    <section
+      class="pt-[40px] max-lg:px-[80px] max-sm:px-[20px] max-md:px-[40px] pb-[48px] px-[80px] flex flex-col items-center gap-[37px]"
+    >
+      <h1
+        class="text-[32px] max-sm:text-[24px] max-sm:leading-[140%] max-sm:w-full leading-[38.4px] text-center tracking-[-0.32px] font-medium inter w-[522px]"
+      >
+        Get a POS System Designed to Empower Better Events
+      </h1>
+      <div
+        class="flex gap-[100px] max-lg:gap-[30px] max-[900px]:flex-col max-[900px]:gap-[82px]"
+      >
+        <div class="w-[413px] max-[900px]:w-full">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/6fb8/0ef4/3cc9aa5fb5b2120691984105fad75417?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V8jGQ-wHjdTnZ9LAtZF~aYgcLpjAf12NrdU5HaZND0aOg~e0Ey5SrYejN7V8sib2bRfxJcAEP8meWdbzm7iGGXNNlRVFEUQ4lfNQ-t6pmKyWCixjzlsbenc8sZa9DTHvxM1Uy0pq-d5J5FKPJOd98aGeFoNSdXFXRos5qkE1UbpoNTSBeISszY9VvxFbSlfRFg7QDZ9K7Gj47d1mCeCn1bezH8gSjZrNW465Qx2QNvVmxW7NTALkWdkA94Ro1IyerSRVSImvceGdSbOF9qJ4Uuf4EAs7RyrEF1vo7ED5LcmC8oV6YcY~e6SX6qzrd3KcR8edw2p9n2XB~C7H0H~Hbw__"
+            alt=""
+            width="413px"
+            height="auto"
+            class="w-[413px] max-[900px]:w-full max-[900px]:h-auto h-[326px] mb-[32px] object-cover"
+          />
+          <h1
+            class="text-[24px] leading-[28.8px] font-medium tracking-[-0.24px] mb-[24px]"
+          >
+            Square Stand 2nd Gen
+          </h1>
+          <p
+            class="w-[387px] max-[900px]:w-full text-base noto-sans opacity-80 mb-[24px]"
+          >
+            Allow your customers to pay their way with an anchored POS system.
+            The Square Stand 2nd Gen is ideal for farmers markets, fundraisers,
+            tradeshows, sporting events, and more. Connect with your own iPad or
+            rent one for a complete point-of-sale rental system.
+          </p>
+          <div class="flex items-center gap-[8px] mb-[12px]">
+            <div
+              class="w-[11.31px] h-[11.31px] rounded-[2.66px] rotate-45 bg-[#EC0037]"
+            ></div>
+            <p class="text-base font-semibold noto-sans">
+              Lowest price since a week!
+            </p>
+          </div>
+          <button
+            class="bg-[#0CA0AD] h-[54px] flex items-center justify-center flex w-[183px] mont-serrat text-white text-[28px] leading-[34px] font-medium"
+          >
+            Get a Quote
+          </button>
+        </div>
+        <div class="w-[413px] max-[900px]:w-full">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/efc1/07c4/d310c2ef57a90261fb95077e26d7b3d2?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZoiXcPtcxIjexdXLfVkBFjfZzuzoK7BWW6tZVgJ6H9JH6BAdjtBO3XIs~xd5506lI9Wc6uavaGIGoYi8S2WyiF8xSkGuaunPGooPML5U~7M6vPH9k6OOWDKrpFMb0WKGuRbg-2lCPhVd-bncGHP9DFPMeXtvbZxvrjw2wHjNjubn4yUYTe-u0kMw-ZdexBHlq-c1rdbDKdO5~OrXSd6STQ58DSPUOTcmQdNRdu6KXtbTf2AubdX-77JSUep8GmqevJ6ULi8VLb-mmq~Xze0Q4p~LdkSznrnzTiRKQtc0LdMcmzzqwXaspx86PB63P9sdcfB3T4KP6LGfm9t2GCzw8g__"
+            alt=""
+            width="413px"
+            height="auto"
+            class="w-[413px] max-[900px]:w-full max-[900px]:h-auto h-[326px] mb-[32px] object-cover"
+          />
+          <h1
+            class="text-[24px] leading-[28.8px] font-medium tracking-[-0.24px] mb-[24px]"
+          >
+            Square Terminal
+          </h1>
+          <p
+            class="w-[387px] max-[900px]:w-full text-base noto-sans opacity-80 mb-[24px]"
+          >
+            Keep the lines moving at your Palo Alto event. The Square Terminal
+            comes with anchorless functionality, making it a good choice for
+            payment processing at concerts, festivals, pop-ups, and more.
+            Optional WiFi hotspot lets you accept payments anywhere.
+          </p>
+          <div class="flex items-center gap-[8px] mb-[12px]">
+            <div
+              class="w-[11.31px] h-[11.31px] rounded-[2.66px] rotate-45 bg-[#EC0037]"
+            ></div>
+            <p class="text-base font-semibold noto-sans">
+              Lowest price since a week!
+            </p>
+          </div>
+          <button
+            class="bg-[#0CA0AD] h-[54px] flex items-center justify-center flex w-[183px] mont-serrat text-white text-[28px] leading-[34px] font-medium"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- faqs -->
+    <section
+      class="pt-[71px] px-[80px] max-md:px-[40px] max-sm:px-[20px] pb-[105.99px] flex flex-col items-center gap-[30px]"
+    >
+      <h1
+        class="w-[522px] text-[32px] max-sm:text-[24px] max-sm:leading-[140%] max-sm:w-full leading-[44.8px] text-center noto-sans"
+      >
+        Frequently Asked Questions
+      </h1>
+      <div class="w-[820px] max-lg:w-full">
+        <details
+          open
+          class="pt-[27px] pb-[24px] border-b-[3px] border-[#D7DEF0]"
+        >
+          <summary class="flex justify-between cursor-pointer">
+            <h1 class="text-[16px] leading-[22.4px]">
+              How long can I rent a point-of-sale system?
+            </h1>
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/6f903f9004ff0ff55b63f0edbff36e176b6f467e/xmark.svg"
+              alt=""
+              class="rotate-img"
+            />
+          </summary>
+          <p class="text-[16px] leading-[22.4px] mt-[16px] text-[#3C3C43D9]">
+            Rent for a single-day event or the whole season. We offer Palo Alto
+            point-of-sale rentals by the day, week, or month.
+          </p>
+        </details>
+        <details class="pt-[27px] pb-[24px] border-b-[3px] border-[#D7DEF0]">
+          <summary class="flex justify-between cursor-pointer">
+            <h1 class="text-[16px] leading-[22.4px]">
+              What is the best POS rental for small events in Palo Alto?
+            </h1>
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/6f903f9004ff0ff55b63f0edbff36e176b6f467e/xmark.svg"
+              alt=""
+              class="rotate-img"
+            />
+          </summary>
+          <p class="text-[16px] leading-[22.4px] mt-[16px] text-[#3C3C43D9]">
+            Square POS hardware works well for small events like trade booths,
+            pop-ups, and farmers markets. The Square Terminal offers mobility,
+            while the Square Stand lets you keep your payment system in one
+            place at the event.
+          </p>
+        </details>
+        <details class="pt-[27px] pb-[24px] border-b-[3px] border-[#D7DEF0]">
+          <summary class="flex justify-between cursor-pointer">
+            <h1 class="text-[16px] leading-[22.4px]">
+              What POS accessories will I need?
+            </h1>
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/6f903f9004ff0ff55b63f0edbff36e176b6f467e/xmark.svg"
+              alt=""
+              class="rotate-img"
+            />
+          </summary>
+          <p class="text-[16px] leading-[22.4px] mt-[16px] text-[#3C3C43D9]">
+            With a built-in chip card and tap reader, our Square POS rentals act
+            as all-in-one POS systems. However, you can also connect your
+            point-of-sale rental with payment accessories, including receipt
+            printers, barcode scanners, and WiFi hotspots. Let us know what you
+            need in your set-up, and our team will create a custom point-of-sale
+            solution for your Palo Alto event.
+          </p>
+        </details>
+        <details class="pt-[27px] pb-[24px] border-b-[3px] border-[#D7DEF0]">
+          <summary class="flex justify-between cursor-pointer">
+            <h1 class="text-[16px] leading-[22.4px]">
+              Can I accept cash payments with Square POS equipment?
+            </h1>
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/6f903f9004ff0ff55b63f0edbff36e176b6f467e/xmark.svg"
+              alt=""
+              class="rotate-img"
+            />
+          </summary>
+          <p class="text-[16px] leading-[22.4px] mt-[16px] text-[#3C3C43D9]">
+            Yes, you can accept cash with a Square POS system. Our point-of-sale
+            rentals let you accept any form of payment, including Google Pay,
+            Apple Pay, Samsung Pay, cash, check, credit card, and debit card.
+          </p>
+        </details>
+        <details class="pt-[27px] pb-[24px] border-b-[3px] border-[#D7DEF0]">
+          <summary class="flex justify-between cursor-pointer">
+            <h1 class="text-[16px] leading-[22.4px]">
+              How long will it take to receive my POS rental?
+            </h1>
+            <img
+              src="https://raw.githubusercontent.com/ak513499786/images/6f903f9004ff0ff55b63f0edbff36e176b6f467e/xmark.svg"
+              alt=""
+              class="rotate-img"
+            />
+          </summary>
+          <p class="text-[16px] leading-[22.4px] mt-[16px] text-[#3C3C43D9]">
+            We offer next day shipping anywhere in the US. We ship from
+            California the day you order, so if you need POS rental equipment in
+            Palo Alto right away, request a quote today. Most orders arrive
+            within one to three business days.
+          </p>
+        </details>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="bg-[#F6F6F6]">
+      <div
+        class="bg-[#F6F6F6] max-w-[1600px] m-auto max-lg:flex-col gap-[20px] max-sm:px-[20px] max-md:px-[40px] pt-[98.5px] pb-[51.5px] px-[80px] flex justify-between items-center"
+      >
+        <div class="w-[630px] max-xl:w-[522px] max-lg:w-full">
+          <h1
+            class="text-[48px] max-sm:text-[36px] max-sm:leading-[120%] leading-[57.6px] tracking-[-1.44px] font-semibold noto-sans mb-[25px]"
+          >
+            Request a Quote for a Palo Alto Point-of-Sale Rental System Today
+          </h1>
+          <p
+            class="text-[20px] max-sm:text-base leading-[30px] noto-sans opacity-80 max-xl:w-[442px] max-lg:w-full w-[542px]"
+          >
+            eTech Rentals specializes in renting high-quality equipment that
+            empowers businesses. Our POS rentals for events in Palo Alto are
+            powerful, easy-to-use solutions that enable fast, secure,
+            hassle-free payments. Request a quote today to get started.
+          </p>
+        </div>
+        <div
+          class="px-[36px] max-lg:w-full max-lg:mt-[52px] max-sm:px-[18px] max-sm:py-[25px] py-[48px] bg-white"
+        >
+          <p
+            class="noto-sans font-semibold text-[20px] max-sm:text-base leading-[22px] tracking-[-1%] mb-[24px]"
+          >
+            Fill out the form to get a quote.
+          </p>
+          <div class="flex max-xl:flex-col gap-[16px]">
+            <label
+              for=""
+              class="border-[1px] text-[12px] max-xl:w-full noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px] w-[216.5px]"
+            >
+              Enter your name
+              <input
+                type="text"
+                name=""
+                class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+                placeholder="Joe Keery"
+                id=""
+              />
+            </label>
+            <label
+              for=""
+              class="border-[1px] text-[12px] max-xl:w-full noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px] w-[216.5px]"
+            >
+              Enter your business name
+              <input
+                type="text"
+                name=""
+                placeholder="JK Computers"
+                class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+                id=""
+              />
+            </label>
+          </div>
+          <label
+            for=""
+            class="border-[1px] mt-[16px] text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px]"
+          >
+            Enter your email
+            <input
+              type="text"
+              name=""
+              class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+              placeholder="joekeery@gmail.com"
+              id=""
+            />
+          </label>
+          <label
+            for=""
+            class="border-[1px] mt-[16px] text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium border-[#00000033] flex flex-col gap-[7px] pl-[13px] pb-[12px] pt-[8px] rounded-[5px]"
+          >
+            Enter your phone number
+            <div class="flex items-center gap-[13px]">
+              <p
+                class="border-r-[1px] border-black w-[33px] text-base noto-sans"
+              >
+                +1
+              </p>
+              <input
+                type="text"
+                name=""
+                class="text-base noto-sans placeholder:opacity-20 placeholder:text-black"
+                placeholder="768 3246"
+                id=""
+              />
+            </div>
+          </label>
+          <label
+            for=""
+            class="pt-[16px] flex text-[12px] noto-sans leading-[18px] text-[#000000cc] font-medium"
+          >
+            Select your business type
+          </label>
+          <div
+            class="flex bg-[#F2F2F2] border-[1px] border-[#00000033] rounded-[8px] w-[226px] h-[44px] mt-[8px]"
+          >
+            <p
+              id="businesscontact"
+              class="w-[113px] h-[42px] cursor-pointer rounded-[8px] bg-[white] flex items-center justify-center noto-sans text-[14px] leading-[21px] text-[#000000cc]"
+            >
+              Business
+            </p>
+            <p
+              id="personalcontact"
+              class="w-[113px] h-[42px] cursor-pointer rounded-[8px] flex items-center justify-center noto-sans text-[14px] leading-[21px] text-[#000000cc]"
+            >
+              Personal
+            </p>
+          </div>
+          <label
+            for="contact"
+            class="flex items-center cursor-pointer text-[14px] mt-[27px] leading-[21px] noto-sans text-[#000000cc]"
+            ><input
+              type="checkbox"
+              name="contact"
+              class="mr-[4px] w-[18px] h-[18px]"
+              id="contact"
+            />I need to be contacted immediately</label
+          >
+          <button
+            class="bg-[#0CA0AD] px-[24px] py-[12px] mt-[13.5px] flex w-[143px] mont-serrat text-white text-[16px] leading-[19.5px] font-medium"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="bg-[#343333] pt-[62px] pb-[80px] px-[80px] max-md:px-[40px] max-ms:px-[20px] gap-[80px] max-lg:gap-[40px] max-[900px]:flex-wrap max-[900px]:justify-start flex justify-center"
+    >
+      <div>
+        <h1
+          class="text-white mont-serrat text-[20px] max-sm:text-base leading-[30px] font-semibold mb-[8px] w-[305px] max-xl:w-[250px]"
+        >
+          Top Rentals
+        </h1>
+        <ul
+          class="list-disc ml-[20px] text-white opacity-80 text-base font-medium"
+          type="disc"
+        >
+          <li>WiFi & Hotspot Rental</li>
+          <li>iPad Rental</li>
+          <li>Laptop Rental</li>
+          <li>MacBook Pro Rental</li>
+          <li>Desktop Computer Rental</li>
+          <li>Square & POS Rental</li>
+          <li>Charging Station Rental</li>
+        </ul>
+      </div>
+      <div>
+        <h1
+          class="text-white mont-serrat text-[20px] max-sm:text-base leading-[30px] font-semibold mb-[8px] w-[305px] max-xl:w-[250px]"
+        >
+          Resources
+        </h1>
+        <ul
+          class="list-disc ml-[20px] text-white opacity-80 text-base font-medium"
+          type="disc"
+        >
+          <li>Get a Quote</li>
+          <li>Gallery</li>
+          <li>Case Studies</li>
+          <li>eTech Blog</li>
+          <li>Referral</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div>
+        <h1
+          class="text-white mont-serrat text-[20px] max-sm:text-base leading-[30px] font-semibold mb-[8px] w-[305px] max-xl:w-[250px]"
+        >
+          Contact us
+        </h1>
+        <ul class="text-white opacity-80 text-base font-medium">
+          <li>(877) 738-3246</li>
+          <li>15164 Stagg St</li>
+          <li>Van Nuys, CA 91405</li>
+          <li>info@etechrentals.com</li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const personal = document.getElementById("personal");
+      const business = document.getElementById("business");
+
+      personal.addEventListener("click", () => {
+        personal.style.backgroundColor = "white";
+        business.style.backgroundColor = "transparent";
+      });
+      business.addEventListener("click", () => {
+        business.style.backgroundColor = "white";
+        personal.style.backgroundColor = "transparent";
+      });
+      const personalcontact = document.getElementById("personalcontact");
+      const businesscontact = document.getElementById("businesscontact");
+
+      personalcontact.addEventListener("click", () => {
+        personalcontact.style.backgroundColor = "white";
+        businesscontact.style.backgroundColor = "transparent";
+      });
+      businesscontact.addEventListener("click", () => {
+        businesscontact.style.backgroundColor = "white";
+        personalcontact.style.backgroundColor = "transparent";
+      });
+    </script>
+  </body>
+</html>
